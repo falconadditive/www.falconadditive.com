@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="icon" type="image/png" href="https://www.falconadditive.com/dist/images/logo.png"> 
+<title>Falcon Additive</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+body {
+  background: linear-gradient(90deg, #ff471a, #ff8533);
+}
+
+.wrapper {
+  height: 100vh;
+  position: realtive;
+}
+
+.fas.fa-envelope {
+  color: #fff;
+  font-size: 2rem;
+  background: #ff571a;
+  padding: 1rem;
+  border-radius: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.card-content {
+  max-width: 30rem;
+  background-color: #fff;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 1rem;
+  padding: 4rem .5rem;
+  box-shadow: 1px 1px 2rem rgba(0,0,0,.3);
+  text-align: center;
+}
+
+.card-content h1 {
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.card-content p {
+  font-size: .8rem;
+  margin: 0 0 2rem 0;
+}
+
+input {
+  padding: .8rem 1rem;
+  width: 40%;
+  border-radius: 5rem;
+  outline: none;
+  border: .1rem solid #d1d1d1;
+  font-size: .7rem;
+}
+
+::placeholder {
+  color: #d1d1d1;
+}
+
+.subscribe-btn {
+  padding: .8rem 2rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #ff471a, #ff8533);
+  color: #fff;
+  font-size: .7rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+<div class="wrapper">
+  <form class="card-content" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="0575cbd7-2da7-489c-b0ca-647229556f09">
+    <br>
+    <div class="container">
+      <h1>Contact us</h1>
+    </div>
+
+    <div class="form-input">
+	<input type="email" placeholder="Your email" name="email" required>
+	<br>
+	<br>
+    	<input type="message" placeholder="Your message" name="message" required>
+	<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+	<br>
+	<br>
+    	<button type="submit" class="subscribe-btn">Submit</button>
+    </div>
+    <br>
+    <a style="color:#000000;" href="index.html">Go back</a>
+  </form>
+</div>
+
+
+</html>
